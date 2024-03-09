@@ -3,7 +3,7 @@
 ## Available formats of messages received by MR-231-3
 - TTM (TrackedTargetMessage)
 - RSD (RadarSystemData Messages)
-## Additional formats
+### Additional formats
 - VHW (Water Speed and Heading) used in receiver MR-231
 
 ## App(main function)
@@ -30,6 +30,12 @@ In a bash shell type the following commands for starting an App. That's it:
 And then:
 
 `mvn exec:java -Dexec.mainClass="org.example.App`
+
+## Tests
+In both of modules mr-231 and mr-231-3 implemented tests
+- [Tests for MR-231 Parser](Code/mr-231/src/test/java/org/example/searadar/mr231/Mr231Tests.java) 
+
+- [Tests for MR-231-3 Parser](Code/mr-231-3/src/test/java/org/example/searadar/mr2313/Mr2313Tests.java)
 
 
 
