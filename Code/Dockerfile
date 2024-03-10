@@ -9,5 +9,3 @@ WORKDIR /app/build
 # When running the container, 
 RUN mvn clean install
 
-# execute the jar file
-CMD ["java", "-jar", "/app/startApp/target/startApp-1.0-SNAPSHOT-jar-with-dependencies.jar"]
