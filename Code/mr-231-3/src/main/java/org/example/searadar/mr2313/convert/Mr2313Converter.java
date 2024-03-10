@@ -104,6 +104,14 @@ public class Mr2313Converter implements SearadarExchangeConverter {
 
         ttm.setType(type);
 
+        try{
+            ttm.setMsgTime(Long.parseLong(fields[14]));
+        }
+        catch(NumberFormatException exception){
+            exception.printStackTrace();
+        }
+        
+
         return ttm;
     }
 
@@ -122,6 +130,8 @@ public class Mr2313Converter implements SearadarExchangeConverter {
         rsd.setDistanceUnit(fields[12]);
         rsd.setDisplayOrientation(fields[13]);
         rsd.setWorkingMode(fields[14]);
+
+        
 
         return rsd;
     }
