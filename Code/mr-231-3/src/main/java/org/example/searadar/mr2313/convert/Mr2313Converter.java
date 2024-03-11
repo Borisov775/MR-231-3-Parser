@@ -103,12 +103,13 @@ public class Mr2313Converter implements SearadarExchangeConverter {
         ttm.setIff(iff);
 
         ttm.setType(type);
+        System.out.println("--------------------"+fields[13]+"------------"+fields[14]);
 
         try{
             ttm.setMsgTime(Long.parseLong(fields[14]));
         }
         catch(NumberFormatException exception){
-            exception.printStackTrace();
+            
         }
         
 
