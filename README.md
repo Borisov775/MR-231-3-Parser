@@ -21,7 +21,7 @@ After creating the Dockerfile, build the docker image:
 
 And the run the container
 
-`docker run -it mr2313 bash
+`docker run -it mr2313 bash`
 
 In a bash shell type the following commands for starting an App. That's it:
 
@@ -29,7 +29,7 @@ In a bash shell type the following commands for starting an App. That's it:
 
 And then:
 
-`mvn exec:java -Dexec.mainClass="org.example.App`
+`mvn exec:java -Dexec.mainClass="org.example.App"`
 
 ## Tests
 In both of modules mr-231 and mr-231-3 implemented tests
